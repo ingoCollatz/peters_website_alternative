@@ -32,7 +32,7 @@ function runOnStart() {
   } else {
     document.getElementById(
       "navbar-list"
-    ).innerHTML = `<li><a class="link" href="#home">Home</a></li><li><a class="link" href="#faecher">Fächer</a></li><li><a class="link" href="#konzept">Konzept</a></li><li><a class="link" href="#contact">Kontakt</a></li>`;
+    ).innerHTML = `<li><a class="link" href="#home">Home</a></li><li><a class="link" href="#konzept">Konzept</a></li><li><a class="link" href="#faecher">Fächer</a></li><li><a class="link" href="#contact">Kontakt</a></li>`;
   }
 }
 if (document.readyState !== "loading") {
@@ -65,18 +65,19 @@ window.addEventListener("resize", function () {
 const reviews = [
   {
     id: 1,
-    name: "Behinderter",
-    text: "Peter ist voll behindert außerdem stinkt er voll nach kaka und pipi",
+    name: "Elsa",
+    text: " Mathe 10 Punkte 🤩",
+    img: "<img class='item-img' src='./images/feedback_elsa.jpg'>",
   },
   {
     id: 2,
-    name: "Moges",
-    text: "Behinderter moges ist ein beloges tschoges",
+    name: "Schüler 2",
+    text: " Ohne Webcam ist das voll cool! ",
   },
   {
     id: 3,
-    name: "Tschoges",
-    text: "Der Moges ist voll der Toges!",
+    name: "Schüler 3",
+    text: " Von einer 5 auf eine 3! ",
   },
 ];
 
@@ -94,6 +95,12 @@ function reviewOnStart() {
   const item = reviews[currentItem];
   author.textContent = item.name;
   text.textContent = item.text;
+
+  if (item.hasOwnProperty("img")) {
+    document.querySelector(".review-img").innerHTML = item.img;
+  } else {
+    document.querySelector(".review-img").innerHTML = "";
+  }
 }
 if (document.readyState !== "loading") {
   reviewOnStart();
@@ -108,6 +115,12 @@ function showPerson(person) {
   const item = reviews[person];
   author.textContent = item.name;
   text.textContent = item.text;
+
+  if (item.hasOwnProperty("img")) {
+    document.querySelector(".review-img").innerHTML = item.img;
+  } else {
+    document.querySelector(".review-img").innerHTML = "";
+  }
 }
 // show next person
 nextBtn.addEventListener("click", function () {
@@ -141,4 +154,49 @@ faecher.forEach(function (fach) {
 
     fach.classList.toggle("show-txt");
   });
+});
+
+// impressum link
+
+const linkImpressum = document.getElementById("link-impressum");
+const impressumElement = document.querySelector(".impressum");
+
+linkImpressum.addEventListener("click", function () {
+  impressumElement.classList.add("show");
+});
+
+const closeImpBtn = document.querySelector(".close-impressum");
+
+closeImpBtn.addEventListener("click", function () {
+  impressumElement.classList.remove("show");
+});
+
+// FAQ link
+
+const linkFaqs = document.getElementById("link-faq");
+const faqElement = document.querySelector(".faq");
+
+linkFaqs.addEventListener("click", function () {
+  faqElement.classList.add("show");
+});
+
+const closeFaqBtn = document.querySelector(".close-faq");
+
+closeFaqBtn.addEventListener("click", function () {
+  faqElement.classList.remove("show");
+});
+
+// ingo link
+
+const ingoLink = document.getElementById("link-ingo");
+const ingoElement = document.querySelector(".ingo");
+
+ingoLink.addEventListener("click", function () {
+  ingoElement.classList.add("show");
+});
+
+const closeIngoBtn = document.querySelector(".close-ingo");
+
+closeIngoBtn.addEventListener("click", function () {
+  ingoElement.classList.remove("show");
 });
