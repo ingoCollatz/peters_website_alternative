@@ -1,144 +1,74 @@
 .head-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 200px;
   background-image: url(images/b1_hauptbild.jpg);
+}
+
+.faecher-img,
+.konzept-img,
+.contact-img,
+.head-img,
+.mathe,
+.deutsch,
+.englisch,
+.geschichte,
+.gitarre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.faecher-img,
+.konzept-img,
+.contact-img {
+  width: 100%;
+  height: 150px;
 }
 
 .faecher-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 150px;
   background-image: url(images/b2_faecher_und_konzept.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 .konzept-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 150px;
   background-image: url(images/b8_paedagog_konzept.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .contact-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 150px;
   background-image: url(images/b8_paedagog_konzept.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+}
+
+.mathe,
+.deutsch,
+.englisch,
+.geschichte,
+.gitarre {
+  width: 100%;
+  height: 80px;
+  cursor: pointer;
 }
 
 .mathe {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 80px;
   background-image: url(images/b3_mathe.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .deutsch {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 80px;
   background-image: url(images/b4_deutsch.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .englisch {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 80px;
   background-image: url(images/b5_englisch.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .geschichte {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 80px;
   background-image: url(images/b6_geschichte.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .gitarre {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 80px;
   background-image: url(images/b7_gitarre.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.deutsch,
-.englisch,
-.mathe,
-.geschichte,
-.gitarre {
-  cursor: pointer;
 }

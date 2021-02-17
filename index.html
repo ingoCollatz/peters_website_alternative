@@ -8,11 +8,8 @@
     <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="img.css" />
     <link rel="stylesheet" href="quotes.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
   </head>
   <body>
     <main class="main-container">
@@ -129,9 +126,11 @@
           <section class="faecher-menue">
                 <article class="fach">
                     <div class="mathe toggle-btn">
-                        <h2>Mathematik</h2>
+                      <div class="img-overlay-fach">
+                        <h2 class="fach-title">Mathematik</h2>
                         <h2 class="plus-icon">+</h2>
                         <h2 class="minus-icon">-</h2>
+                      </div>
                     </div>
                     <div class="fach-txt">
                         <ul class="fach-liste">
@@ -146,9 +145,11 @@
                 </article>
                 <article class="fach">
                     <div class="deutsch toggle-btn">
-                        <h2>Deutsch</h2>
+                      <div class="img-overlay-fach">
+                        <h2 class="fach-title">Deutsch</h2>
                         <h2 class="plus-icon">+</h2>
                         <h2 class="minus-icon">-</h2>
+                      </div>
                     </div>
                     <div class="fach-txt">
                         <ul class="fach-liste">
@@ -161,9 +162,11 @@
                 </article>
                 <article class="fach">
                     <div class="englisch toggle-btn">
-                        <h2>Englisch</h2>
+                      <div class="img-overlay-fach">
+                        <h2 class="fach-title">Englisch</h2>
                         <h2 class="plus-icon">+</h2>
                         <h2 class="minus-icon">-</h2>
+                      </div>
                     </div>
                     <div class="fach-txt">
                         <ul class="fach-liste">
@@ -176,9 +179,11 @@
                 </article>
                 <article class="fach">
                     <div class="geschichte toggle-btn">
-                        <h2>Geschichte</h2>
+                      <div class="img-overlay-fach">
+                        <h2 class="fach-title">Geschichte</h2>
                         <h2 class="plus-icon">+</h2>
                         <h2 class="minus-icon">-</h2>
+                      </div>
                     </div>
                     <div class="fach-txt">
                         <ul class="fach-liste">
@@ -190,19 +195,22 @@
                 </article>
                 <article class="fach">
                     <div class="gitarre toggle-btn">
-                        <h2>Naturwissenschaften</h2>
+                      <div class="img-overlay-fach">
+                        <h2 class="fach-title">Naturwissenschaften</h2>
                         <h2 class="plus-icon">+</h2>
                         <h2 class="minus-icon">-</h2>
+                      </div>
                     </div>
                     <div class="fach-txt">
                         <ul class="fach-liste">
                           <li>Physik bis Klasse 12</li>
                           <li>Biologie und Chemie bis Klasse 11</li>
-                          <li>Einzelne Themen können bei Absprache aubereitet werden</li>
+                          <li>Einzelne Themen können bei Absprache aufbereitet werden</li>
                         </ul>
                     </div>
                 </article>
             </section>
+            <!-- reviews -->
             <section class="reviews">
               <h2 class="content-txt">Das sagen meine Schüler:</h2>
               <div class="quotes-txt">
@@ -216,15 +224,14 @@
                   <a class="next">&#10095;</a>
                 </div>
                 <div class="mySlides">
-                  <p class="author">behinderter:</p>
-                  <q class="text"
-                    >Peter ist voll behindert außerdem stinkt er voll nach kacka und
-                    pipi Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sint iusto, corporis saepe ad magnam suscipit culpa consectetur
-                    sequi animi blanditiis?</q>
+                  <p class="author"></p>
+                  <div class="review-img">
+                  </div>
+                  <q class="text"></q>
                 </div>
               </div>
             </section>
+            <!-- end reviews -->
         </article>
       </section>
       <!-- end fächer -->
@@ -237,17 +244,59 @@
         </div>
         <article class="content">
           <p class="content-txt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-            quam mollitia veritatis perspiciatis est atque eum cum eaque
-            praesentium numquam in voluptates labore pariatur iure soluta esse,
-            minima culpa quod error! Quaerat, rerum adipisci neque illum ab,
-            repellendus eveniet minus nisi delectus non obcaecati suscipit
-            officiis maiores, culpa incidunt reiciendis?
+            Sie können mich unter +49123456789 Anrufen, oder mir direkt Auf WhatsApp schreiben.
           </p>
         </article>
       </section>
       <!-- end contact -->
+      <footer>
+        <article>
+          <ul class="footer-list">
+            <li id="link-faq">F.A.Q.</li>
+            <li id="link-impressum">Impressum</li>
+            <li>Social Media</li>
+            <li>Über Mich</li>
+          </ul>
+        </article>
+      </footer>
+      <!-- start hiden content -->
+      <div>
+        <p class="credits" id="link-ingo">Website by Ingo Collatz</p>
+      </div>
+      <div class="faq">
+        <h1>FAQ</h1>
+        <p>
+          <br>
+          <br>
+          ist peter behindert?
+          <br>
+          <br>
+          stinkt peter nach kaka und pipi?
+          <br>
+          <br>
+          passt peter in meine hosentasche?
+          <br>
+          <br>
+        </p>
+        <h1 class="close-faq">schließen X</h1>
+      </div>
+      <div class="impressum">
+        <h1>Impressum</h1>
+        <p>
+        <br>
+        <br>
+          Nachhilfe fucking digital by Lil Pete aka Mr.K
+        <br>
+        <br>  
+        </p>
+        <h1 class="close-impressum">schließen X</h1>
+      </div>
+      <div class="ingo">
+        <img src="./images/image0.jpeg" alt="">
+        <h1 class="close-ingo">Schließen</h1>
+      </div>
+      <!-- end hidden content -->
     </main>
-    <script src="app.js"></script>
   </body>
+  <script src="app.js"></script>
 </html>
