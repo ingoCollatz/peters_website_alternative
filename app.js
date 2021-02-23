@@ -28,7 +28,7 @@ function runOnStart() {
   if (screenWidth <= 800) {
     document.getElementById(
       "navbar-list"
-    ).innerHTML = `<li><a href="tel:+4917629418662"><img src="./vector/phone1.png" alt="" class="icon"><p id="number">Anrufen</p></a></li><li><a href="whatsapp://send?text=Hallo! ich bin ein behinderter text der in einem whatsapp button programmiert ist auf peters website!&phone=+4917629418662"><img src="./vector/icons8-whatsapp.svg" alt="" class="icon"><p>WhatsApp</p></a></li>`;
+    ).innerHTML = `<li><a href="tel:+49123456789"><img src="./vector/phone1.png" alt="" class="icon"><p id="number">Anrufen</p></a></li><li><a href="whatsapp://send?text=Hallo! ich bin ein behinderter text der in einem whatsapp button programmiert ist auf peters website!&phone=+49123456789"><img src="./vector/icons8-whatsapp.svg" alt="" class="icon"><p>WhatsApp</p></a></li>`;
   } else {
     document.getElementById(
       "navbar-list"
@@ -184,19 +184,4 @@ const closeFaqBtn = document.querySelector(".close-faq");
 
 closeFaqBtn.addEventListener("click", function () {
   faqElement.classList.remove("show");
-});
-
-// ingo link
-
-const ingoLink = document.getElementById("link-ingo");
-const ingoElement = document.querySelector(".ingo");
-
-ingoLink.addEventListener("click", function () {
-  ingoElement.classList.add("show");
-});
-
-const closeIngoBtn = document.querySelector(".close-ingo");
-
-closeIngoBtn.addEventListener("click", function () {
-  ingoElement.classList.remove("show");
 });
