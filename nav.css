@@ -2,13 +2,13 @@
   height: 50px;
   max-width: 1200px;
   width: 100%;
-  background-color: aqua;
-  color: rgb(7, 5, 2);
+  background-color: #f3b749;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: 2s;
+  transition: 300ms;
   overflow: hidden;
 }
 
@@ -16,5 +16,4 @@
   position: fixed;
   top: 0;
   opacity: 90%;
-  max-width: 1200px;
 }

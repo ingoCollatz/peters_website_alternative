@@ -32,7 +32,52 @@ function runOnStart() {
   } else {
     document.getElementById(
       "navbar-list"
-    ).innerHTML = `<li><a class="link" href="#home">Home</a></li><li><a class="link" href="#konzept">Konzept</a></li><li><a class="link" href="#faecher">Fächer</a></li><li><a class="link" href="#contact">Kontakt</a></li>`;
+    ).innerHTML = `<li><p class="link home-link">Home</p></li><li><p class="link konzept-link">Konzept</p></li><li><p class="link faecher-link">Fächer</p></li><li><p class="link kontakt-link">Kontakt</p></li>`;
+
+    const homeBtn = document.querySelector(".home-link"),
+      konzeptBtn = document.querySelector(".konzept-link"),
+      faecherBtn = document.querySelector(".faecher-link"),
+      kontaktBtn = document.querySelector(".kontakt-link");
+
+    homeBtn.addEventListener("click", function () {
+      const bodyRect = document.body.getBoundingClientRect(),
+        elemRect = document.getElementById("home").getBoundingClientRect(),
+        offset = elemRect.top - bodyRect.top;
+      window.scroll({
+        top: offset,
+        left: 0,
+      });
+    });
+
+    konzeptBtn.addEventListener("click", function () {
+      const bodyRect = document.body.getBoundingClientRect(),
+        elemRect = document.getElementById("konzept").getBoundingClientRect(),
+        offset = elemRect.top - bodyRect.top;
+      window.scroll({
+        top: offset - 60,
+        left: 0,
+      });
+    });
+
+    faecherBtn.addEventListener("click", function () {
+      const bodyRect = document.body.getBoundingClientRect(),
+        elemRect = document.getElementById("faecher").getBoundingClientRect(),
+        offset = elemRect.top - bodyRect.top;
+      window.scroll({
+        top: offset - 60,
+        left: 0,
+      });
+    });
+
+    kontaktBtn.addEventListener("click", function () {
+      const bodyRect = document.body.getBoundingClientRect(),
+        elemRect = document.getElementById("contakt").getBoundingClientRect(),
+        offset = elemRect.top - bodyRect.top;
+      window.scroll({
+        top: offset - 60,
+        left: 0,
+      });
+    });
   }
 }
 if (document.readyState !== "loading") {
@@ -56,7 +101,52 @@ window.addEventListener("resize", function () {
   } else {
     document.getElementById(
       "navbar-list"
-    ).innerHTML = `<li><a class="link" href="#home">Home</a></li><li><a class="link" href="#faecher">Fächer</a></li><li><a class="link" href="#konzept">Konzept</a></li><li><a class="link" href="#contact">Kontakt</a></li>`;
+    ).innerHTML = `<li><p class="link home-link">Home</p></li><li><p class="link konzept-link">Konzept</p></li><li><p class="link faecher-link">Fächer</p></li><li><p class="link kontakt-link">Kontakt</p></li>`;
+
+    const homeBtn = document.querySelector(".home-link"),
+      konzeptBtn = document.querySelector(".konzept-link"),
+      faecherBtn = document.querySelector(".faecher-link"),
+      kontaktBtn = document.querySelector(".kontakt-link");
+
+    homeBtn.addEventListener("click", function () {
+      const bodyRect = document.body.getBoundingClientRect(),
+        elemRect = document.getElementById("home").getBoundingClientRect(),
+        offset = elemRect.top - bodyRect.top;
+      window.scroll({
+        top: offset,
+        left: 0,
+      });
+    });
+
+    konzeptBtn.addEventListener("click", function () {
+      const bodyRect = document.body.getBoundingClientRect(),
+        elemRect = document.getElementById("konzept").getBoundingClientRect(),
+        offset = elemRect.top - bodyRect.top;
+      window.scroll({
+        top: offset - 60,
+        left: 0,
+      });
+    });
+
+    faecherBtn.addEventListener("click", function () {
+      const bodyRect = document.body.getBoundingClientRect(),
+        elemRect = document.getElementById("faecher").getBoundingClientRect(),
+        offset = elemRect.top - bodyRect.top;
+      window.scroll({
+        top: offset - 60,
+        left: 0,
+      });
+    });
+
+    kontaktBtn.addEventListener("click", function () {
+      const bodyRect = document.body.getBoundingClientRect(),
+        elemRect = document.getElementById("contakt").getBoundingClientRect(),
+        offset = elemRect.top - bodyRect.top;
+      window.scroll({
+        top: offset - 60,
+        left: 0,
+      });
+    });
   }
 });
 
