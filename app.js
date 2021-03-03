@@ -27,6 +27,9 @@ function runOnStart() {
 
   if (screenWidth <= 800) {
     document.getElementById(
+      "topic"
+    ).innerHTML = `<h2>Nachhilfe Digital - Online und Ortsunabhängig</h2>`;
+    document.getElementById(
       "navbar-list"
     ).innerHTML = `<li><a href="tel:+49123456789"><img src="./vector/phone1.png" alt="" class="icon"><p id="number">Anrufen</p></a></li><li><a href="whatsapp://send?text=Hallo! ich bin ein behinderter text der in einem whatsapp button programmiert ist auf peters website!&phone=+49123456789"><img src="./vector/icons8-whatsapp.svg" alt="" class="icon"><p>WhatsApp</p></a></li>`;
   } else {
